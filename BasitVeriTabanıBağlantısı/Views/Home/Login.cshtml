@@ -1,0 +1,28 @@
+﻿<style>
+
+
+    .myclass {
+        background-color: aquamarine
+    }
+
+</style>
+
+
+@using BasitVeriTabanıBağlantısı.DataModel;
+@model Auth
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+
+
+
+    @Html.TextBoxFor(s=>s.Email,new {@class="myclass",test="test attribute",placeholder="Bu bir place holderdir"})
+    <br />
+
+    @Html.TextBoxFor(s=>s.Password,new {style="background-color:red"})
+
+
+    <input   type="submit" value="Login ol" />
+
+
+}

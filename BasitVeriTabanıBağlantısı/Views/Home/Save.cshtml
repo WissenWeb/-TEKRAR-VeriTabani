@@ -1,0 +1,17 @@
+﻿@using BasitVeriTabanıBağlantısı.DataModel;
+@model Auth
+
+
+@using (Html.BeginForm("Save", "Home", FormMethod.Post))
+{
+    
+    @Html.LabelFor(s=>s.Email)
+    @Html.TextBoxFor(s=>s.Email)
+
+
+    @Html.LabelFor(s=>s.Password)
+    @Html.TextBoxFor(s=>s.Password)
+
+    <input type="submit" value="Kaydet" />
+
+}
